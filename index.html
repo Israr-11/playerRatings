@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Player Cards</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="./images/Frickley_Athletic_F.C._logo_600_W.svg_.png" alt="">
+        </div>
+        <div class="header-title">
+            <h1>Frickley Under 15s</h1>
+            <h2>Player Ratings</h2>
+        </div>
+    </header>
+    <br>
+    
+    <div class="carlos" style="margin-top: 100px;">
+        <div id="starter-cards" class="player-cards">
+            <!-- Starter player cards will be rendered here -->
+        </div>
+        
+        <div id="substitute-cards" class="player-cards">
+            <!-- Substitute player cards will be rendered here -->
+        </div>
+
+        <div id="injury-cards" class="player-cards">
+            <!-- player-cards cards will be rendered here -->
+        </div>
+        
+        <div id="banned-cards" class="player-cards">
+            <!-- banned-cards cards will be rendered here -->
+        </div>
+        
+        <div id="player-cards" class="player-cards">
+            <!-- Player cards will be rendered here -->
+        </div>
+    </div>
+    
+    
+    <button class="star-button" id="starButton"></button>
+    
+    <script src="https://kit.fontawesome.com/a5eede4719.js" crossorigin="anonymous"></script>
+    <script type="module" src="./card.js"></script>
+    <script type="module" src="./players.js"></script>
+
+
+</body>
+</html>

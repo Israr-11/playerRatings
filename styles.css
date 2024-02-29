@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    font-weight: bold;
+    background: lightgray;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    display: flex;
+}
+.player-cards {
+    border: solid rgb(255, 255, 255);
+    /* background-image: url(./images/purple-gradient.91cb135a.jpg); */
+    /* background-size: cover; */
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    /* margin-top: 650px; */
+}
+
+.profile-pic {
+    border: 4px solid rgb(255, 255, 255);
+    width: 280px;
+    height: 320px;
+    border-radius: 10px;
+    position: relative; /* Add position:relative to the container */
+}
+
+.profile-pic-image {
+    position: absolute; /* Add position:absolute to the image container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide any overflow that doesn't fit within the container */
+}
+
+.profile-pic-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the image aspect ratio and cover the container */
+}
+
+
+.name {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.player-info-name {
+    color: white;
+}
+
+.rating-score-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    margin: 3px 1px;
+    cursor: pointer;
+}
+/* Add this CSS code to your styles.css file */
+.rating-score-btn:active,
+.rating-score-btn.clicked {
+    background-color: #f00; /* Background color when clicked (red) */
+    color: #fff; /* Text color when clicked (white) */
+}
+ 
+.profile-pic-position {
+    color: white;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    top: 30px;
+    left: -15px;
+    z-index: 10;
+}
+.player-info-bottom {
+    /* border: 2px solid red; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.star-button {
+    /* border: 2px solid black; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: none;
+}
+.star-button i {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.star-button.gold {
+    background-color: gold; /* Change the background color to gold when the button has the "gold" class */
+  }
+
+#starter-cards, #banned-cards, #injury-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Adjust the gap between player cards as needed */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+/* Starter player card style */
+.starter {
+    background: rgb(162,158,7);
+    background: linear-gradient(352deg, rgba(162,158,7,1) 0%, rgba(9,9,121,1) 43%, rgba(255,255,255,1) 100%);
+    /* Add any other styles you want for starters */
+}
+.status-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    background-color: rgb(43, 43, 43);
+    margin-bottom: 20px;
+}
+
+#substitute-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Adjust the gap between player cards as needed */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+  
+  /* Substitute player card style */
+  .substitute {
+    background: rgb(9,9,121);
+    background: radial-gradient(circle, rgba(9,9,121,1) 43%, rgba(255,255,255,1) 100%);
+    /* Add any other styles you want for substitutes */
+  }
+  /* Add some margin or padding to the voting container */
+.voting-counter {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.injured {
+    background: rgb(18,224,61);
+    background: radial-gradient(circle, rgba(18,224,61,1) 64%, rgba(255,255,255,1) 100%);
+}
+.banned {
+    background: rgb(224,18,18);
+    background: radial-gradient(circle, rgba(224,18,18,1) 64%, rgba(255,255,255,1) 100%);
+}
